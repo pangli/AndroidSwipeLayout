@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zorro.swipe.SwipeLayout
+        android:id="@+id/swipe_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:tag="Bottom_Right">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@mipmap/magnifier" />
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#4cd964"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@mipmap/star" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/red"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@mipmap/trash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:text="我只能向左滑动展开" />
+
+            <Button
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="点击展开" />
+        </LinearLayout>
+    </com.zorro.swipe.SwipeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zorro.swipe.SwipeLayout
+        android:id="@+id/swipe_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:clickToClose="true">
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="#66ddff00"
+            android:tag="Bottom_Left"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/archive"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#C7C7CC"
+                android:gravity="center"
+                android:text="Archive" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/red"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:tag="Bottom_Right">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@mipmap/magnifier" />
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#4cd964"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@mipmap/star" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/red"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@mipmap/trash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/start_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="Bottom_TopAndBottom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dark_gray"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_collect"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/star" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white"
+            android:padding="10dp"
+            android:tag="Hover"
+            android:text="我可以四个方向滑动展开" />
+
+    </com.zorro.swipe.SwipeLayout>
+</androidx.cardview.widget.CardView>

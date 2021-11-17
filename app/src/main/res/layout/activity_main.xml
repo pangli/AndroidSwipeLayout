@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F0F0"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <include
+        android:id="@+id/sample1"
+        layout="@layout/sample1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+
+    <include
+        android:id="@+id/sample2"
+        layout="@layout/sample2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp" />
+
+    <include
+        android:id="@+id/sample3"
+        layout="@layout/sample3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="RecyclerView示例"
+        android:textSize="20sp" />
+
+</LinearLayout>
