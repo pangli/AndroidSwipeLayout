@@ -35,14 +35,18 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 }
 
+final group = "com.github.pangli"
+final artifact = "swipelayout"
+final versionName = "1.0"
+
 afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.zorro.swipelayout'
-                artifactId = 'swipelayout'
-                version = '1.0'
+                groupId = group
+                artifactId = artifact
+                version = versionName
             }
         }
     }
